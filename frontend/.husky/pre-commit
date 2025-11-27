@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔎 Type checking..."
+pnpm type-check
+if [ $? -ne 0 ]; then
+  echo "❌ Type errors found. Commit aborted."
+  exit 1
+fi
+
+echo "✅ Type check passed. Running lint-staged..."
+pnpm lint-staged

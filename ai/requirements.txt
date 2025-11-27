@@ -1,0 +1,10 @@
+# ml-language/requirements.txt
+fastapi
+uvicorn[standard] # Server ASGI để chạy FastAPI
+scikit-learn
+nltk # Mặc dù scikit-learn có stop words, nltk có thể hữu ích hơn cho tiếng Việt
+underthesea # Thư viện tách từ tiếng Việt tốt
+joblib # Để lưu/load model scikit-learn
+pandas # Để xử lý dữ liệu dễ dàng hơn (tùy chọn)
+python-dotenv # Để load biến môi trường (như API keys nếu có)
+requests # Để gọi API Go nếu cần lấy dữ liệu

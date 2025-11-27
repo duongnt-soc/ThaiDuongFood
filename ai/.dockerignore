@@ -1,0 +1,9 @@
+# .dockerignore (cho Python)
+Dockerfile
+.dockerignore
+.git
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pkl
